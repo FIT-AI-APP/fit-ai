@@ -1,0 +1,537 @@
+[
+  {
+    "id": "bench-press",
+    "name": "벤치프레스",
+    "muscles": [
+      "가슴",
+      "삼두",
+      "어깨"
+    ],
+    "level": "beginner",
+    "equipment": "barbell",
+    "risk": "팔꿈치를 과하게 벌리면 어깨 부상 위험. 고중량은 스포터 필요.",
+    "how": "어깨뼈를 모아 고정하고 바를 가슴 중앙까지 내렸다가 밀어 올린다.",
+    "alternatives": [
+      "dumbbell-press",
+      "push-up"
+    ],
+    "weightBasis": "total",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.4,
+        "mid": 0.7,
+        "high": 1
+      },
+      "female": {
+        "low": 0.24,
+        "mid": 0.42,
+        "high": 0.6
+      }
+    }
+  },
+  {
+    "id": "dumbbell-press",
+    "name": "덤벨 프레스",
+    "muscles": [
+      "가슴",
+      "삼두",
+      "어깨"
+    ],
+    "level": "beginner",
+    "equipment": "dumbbell",
+    "risk": "덤벨이 흔들려 손목과 어깨에 무리가 갈 수 있음. 중량을 낮게 시작.",
+    "how": "벤치에 누워 덤벨을 가슴 옆까지 내렸다가 가슴 위로 모으듯 밀어 올린다.",
+    "alternatives": [
+      "bench-press",
+      "push-up"
+    ],
+    "weightBasis": "perHand",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.15,
+        "mid": 0.28,
+        "high": 0.4
+      },
+      "female": {
+        "low": 0.09,
+        "mid": 0.17,
+        "high": 0.24
+      }
+    }
+  },
+  {
+    "id": "push-up",
+    "name": "푸시업",
+    "muscles": [
+      "가슴",
+      "삼두",
+      "코어"
+    ],
+    "level": "beginner",
+    "equipment": "bodyweight",
+    "risk": "허리가 꺾이면 요통 위험. 힘들면 무릎을 대고 수행.",
+    "how": "몸을 일직선으로 유지하고 가슴이 바닥 가까이 닿도록 내려갔다 밀어 올린다.",
+    "alternatives": [
+      "dumbbell-press"
+    ],
+    "weightBasis": "none",
+    "weightMultiplier": null
+  },
+  {
+    "id": "cable-fly",
+    "name": "케이블 플라이",
+    "muscles": [
+      "가슴"
+    ],
+    "level": "intermediate",
+    "equipment": "cable",
+    "risk": "팔을 너무 뒤로 젖히면 어깨 앞쪽에 부담. 가벼운 중량으로 수행.",
+    "how": "팔꿈치를 살짝 굽힌 채 가슴 앞에서 두 손을 모은다.",
+    "alternatives": [
+      "dumbbell-press"
+    ],
+    "weightBasis": "perHand",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.1,
+        "mid": 0.17,
+        "high": 0.25
+      },
+      "female": {
+        "low": 0.06,
+        "mid": 0.1,
+        "high": 0.15
+      }
+    }
+  },
+  {
+    "id": "lat-pulldown",
+    "name": "랫 풀다운",
+    "muscles": [
+      "등",
+      "이두"
+    ],
+    "level": "beginner",
+    "equipment": "machine",
+    "risk": "바를 목 뒤로 내리면 어깨 손상 위험. 반드시 가슴 앞으로 당긴다.",
+    "how": "가슴을 펴고 팔꿈치를 아래로 끌어내리듯 바를 쇄골 쪽으로 당긴다.",
+    "alternatives": [
+      "seated-row",
+      "pull-up"
+    ],
+    "weightBasis": "stack",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.4,
+        "mid": 0.6,
+        "high": 0.85
+      },
+      "female": {
+        "low": 0.24,
+        "mid": 0.36,
+        "high": 0.51
+      }
+    }
+  },
+  {
+    "id": "seated-row",
+    "name": "시티드 로우",
+    "muscles": [
+      "등",
+      "이두"
+    ],
+    "level": "beginner",
+    "equipment": "machine",
+    "risk": "상체를 반동으로 젖히면 허리에 부담. 상체는 고정.",
+    "how": "허리를 곧게 펴고 양쪽 날개뼈를 모으며 손잡이를 배 쪽으로 당긴다.",
+    "alternatives": [
+      "lat-pulldown",
+      "barbell-row"
+    ],
+    "weightBasis": "stack",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.4,
+        "mid": 0.6,
+        "high": 0.8
+      },
+      "female": {
+        "low": 0.24,
+        "mid": 0.36,
+        "high": 0.48
+      }
+    }
+  },
+  {
+    "id": "barbell-row",
+    "name": "바벨 로우",
+    "muscles": [
+      "등",
+      "이두",
+      "코어"
+    ],
+    "level": "intermediate",
+    "equipment": "barbell",
+    "risk": "허리가 둥글게 말리면 디스크 위험. 중량보다 자세 우선.",
+    "how": "상체를 숙여 허리를 중립으로 유지하고 바를 배꼽 쪽으로 당긴다.",
+    "alternatives": [
+      "seated-row"
+    ],
+    "weightBasis": "total",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.3,
+        "mid": 0.5,
+        "high": 0.8
+      },
+      "female": {
+        "low": 0.18,
+        "mid": 0.3,
+        "high": 0.48
+      }
+    }
+  },
+  {
+    "id": "pull-up",
+    "name": "풀업",
+    "muscles": [
+      "등",
+      "이두"
+    ],
+    "level": "advanced",
+    "equipment": "bodyweight",
+    "risk": "반동을 쓰면 어깨와 팔꿈치 부상 위험. 못 하면 보조 머신이나 랫 풀다운으로 대체.",
+    "how": "어깨를 내린 채 가슴을 바에 가깝게 올린다.",
+    "alternatives": [
+      "lat-pulldown"
+    ],
+    "weightBasis": "none",
+    "weightMultiplier": null
+  },
+  {
+    "id": "deadlift",
+    "name": "데드리프트",
+    "muscles": [
+      "등",
+      "둔근",
+      "햄스트링"
+    ],
+    "level": "advanced",
+    "equipment": "barbell",
+    "risk": "허리가 말리면 디스크 위험이 큼. 초보자는 가벼운 중량으로 코치 확인 후 진행.",
+    "how": "바를 정강이에 붙이고 허리를 중립으로 유지한 채 엉덩이와 무릎을 함께 펴며 일어난다.",
+    "alternatives": [
+      "romanian-deadlift"
+    ],
+    "weightBasis": "total",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.6,
+        "mid": 1,
+        "high": 1.5
+      },
+      "female": {
+        "low": 0.48,
+        "mid": 0.8,
+        "high": 1.2
+      }
+    }
+  },
+  {
+    "id": "squat",
+    "name": "스쿼트",
+    "muscles": [
+      "대퇴사두",
+      "둔근",
+      "코어"
+    ],
+    "level": "intermediate",
+    "equipment": "barbell",
+    "risk": "무릎이 안쪽으로 모이거나 허리가 말리면 부상 위험. 고중량은 세이프티 바 사용.",
+    "how": "발을 어깨너비로 벌리고 무릎과 발끝 방향을 맞춰 허벅지가 평행이 될 때까지 앉았다 일어난다.",
+    "alternatives": [
+      "leg-press",
+      "lunge"
+    ],
+    "weightBasis": "total",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.5,
+        "mid": 0.8,
+        "high": 1.2
+      },
+      "female": {
+        "low": 0.4,
+        "mid": 0.64,
+        "high": 0.96
+      }
+    }
+  },
+  {
+    "id": "leg-press",
+    "name": "레그 프레스",
+    "muscles": [
+      "대퇴사두",
+      "둔근"
+    ],
+    "level": "beginner",
+    "equipment": "machine",
+    "risk": "무릎을 끝까지 잠그면 관절에 부담. 허리가 패드에서 뜨지 않게.",
+    "how": "발판을 어깨너비로 밀어내되 무릎을 완전히 펴지 않는다.",
+    "alternatives": [
+      "squat"
+    ],
+    "weightBasis": "total",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.8,
+        "mid": 1.5,
+        "high": 2.5
+      },
+      "female": {
+        "low": 0.64,
+        "mid": 1.2,
+        "high": 2
+      }
+    }
+  },
+  {
+    "id": "lunge",
+    "name": "런지",
+    "muscles": [
+      "대퇴사두",
+      "둔근",
+      "햄스트링"
+    ],
+    "level": "beginner",
+    "equipment": "dumbbell",
+    "risk": "앞 무릎이 발끝을 크게 넘으면 무릎 부담. 균형이 어려우면 고정 런지부터.",
+    "how": "한 발을 앞으로 내딛고 뒤 무릎이 바닥 가까이 닿도록 내려갔다 돌아온다.",
+    "alternatives": [
+      "squat",
+      "leg-press"
+    ],
+    "weightBasis": "perHand",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.1,
+        "mid": 0.2,
+        "high": 0.3
+      },
+      "female": {
+        "low": 0.08,
+        "mid": 0.16,
+        "high": 0.24
+      }
+    }
+  },
+  {
+    "id": "romanian-deadlift",
+    "name": "루마니안 데드리프트",
+    "muscles": [
+      "햄스트링",
+      "둔근",
+      "허리"
+    ],
+    "level": "intermediate",
+    "equipment": "barbell",
+    "risk": "허리를 말면 부상 위험. 햄스트링이 당겨지는 범위까지만 내린다.",
+    "how": "무릎을 살짝 굽히고 엉덩이를 뒤로 빼며 바를 다리를 따라 내렸다 올린다.",
+    "alternatives": [
+      "leg-curl"
+    ],
+    "weightBasis": "total",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.4,
+        "mid": 0.7,
+        "high": 1
+      },
+      "female": {
+        "low": 0.32,
+        "mid": 0.56,
+        "high": 0.8
+      }
+    }
+  },
+  {
+    "id": "leg-curl",
+    "name": "레그 컬",
+    "muscles": [
+      "햄스트링"
+    ],
+    "level": "beginner",
+    "equipment": "machine",
+    "risk": "반동으로 하면 햄스트링 파열 위험. 천천히 수행.",
+    "how": "패드를 발목 뒤에 맞추고 무릎을 굽혀 당긴 뒤 천천히 돌아온다.",
+    "alternatives": [
+      "romanian-deadlift"
+    ],
+    "weightBasis": "stack",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.2,
+        "mid": 0.35,
+        "high": 0.5
+      },
+      "female": {
+        "low": 0.16,
+        "mid": 0.28,
+        "high": 0.4
+      }
+    }
+  },
+  {
+    "id": "overhead-press",
+    "name": "오버헤드 프레스",
+    "muscles": [
+      "어깨",
+      "삼두"
+    ],
+    "level": "intermediate",
+    "equipment": "barbell",
+    "risk": "허리를 과하게 젖히면 요통 위험. 복부에 힘을 주고 수행.",
+    "how": "바를 쇄골 위에서 시작해 머리 위로 똑바로 밀어 올린다.",
+    "alternatives": [
+      "lateral-raise"
+    ],
+    "weightBasis": "total",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.25,
+        "mid": 0.4,
+        "high": 0.6
+      },
+      "female": {
+        "low": 0.15,
+        "mid": 0.24,
+        "high": 0.36
+      }
+    }
+  },
+  {
+    "id": "lateral-raise",
+    "name": "사이드 레터럴 레이즈",
+    "muscles": [
+      "어깨"
+    ],
+    "level": "beginner",
+    "equipment": "dumbbell",
+    "risk": "무겁게 하면 승모근이 개입되고 어깨 충돌 위험. 가벼운 중량으로.",
+    "how": "팔꿈치를 살짝 굽힌 채 어깨 높이까지 옆으로 들어 올린다.",
+    "alternatives": [
+      "overhead-press"
+    ],
+    "weightBasis": "perHand",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.04,
+        "mid": 0.07,
+        "high": 0.1
+      },
+      "female": {
+        "low": 0.02,
+        "mid": 0.04,
+        "high": 0.06
+      }
+    }
+  },
+  {
+    "id": "barbell-curl",
+    "name": "바벨 컬",
+    "muscles": [
+      "이두"
+    ],
+    "level": "beginner",
+    "equipment": "barbell",
+    "risk": "몸을 흔들어 올리면 허리에 부담. 팔꿈치는 몸통에 고정.",
+    "how": "팔꿈치를 고정하고 바를 어깨 쪽으로 말아 올렸다 천천히 내린다.",
+    "alternatives": [],
+    "weightBasis": "total",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.15,
+        "mid": 0.25,
+        "high": 0.4
+      },
+      "female": {
+        "low": 0.09,
+        "mid": 0.15,
+        "high": 0.24
+      }
+    }
+  },
+  {
+    "id": "triceps-pushdown",
+    "name": "트라이셉스 푸시다운",
+    "muscles": [
+      "삼두"
+    ],
+    "level": "beginner",
+    "equipment": "cable",
+    "risk": "팔꿈치가 벌어지면 관절에 부담. 팔꿈치를 옆구리에 붙인다.",
+    "how": "팔꿈치를 고정하고 케이블을 아래로 끝까지 눌러 편다.",
+    "alternatives": [
+      "push-up"
+    ],
+    "weightBasis": "stack",
+    "weightMultiplier": {
+      "male": {
+        "low": 0.2,
+        "mid": 0.35,
+        "high": 0.5
+      },
+      "female": {
+        "low": 0.12,
+        "mid": 0.21,
+        "high": 0.3
+      }
+    }
+  },
+  {
+    "id": "plank",
+    "name": "플랭크",
+    "muscles": [
+      "코어"
+    ],
+    "level": "beginner",
+    "equipment": "bodyweight",
+    "risk": "엉덩이가 처지면 허리에 부담. 몸을 일직선으로 유지.",
+    "how": "팔꿈치를 어깨 아래에 두고 머리부터 발끝까지 일직선으로 버틴다.",
+    "alternatives": [
+      "leg-raise"
+    ],
+    "weightBasis": "none",
+    "weightMultiplier": null
+  },
+  {
+    "id": "leg-raise",
+    "name": "레그 레이즈",
+    "muscles": [
+      "코어"
+    ],
+    "level": "intermediate",
+    "equipment": "bodyweight",
+    "risk": "허리가 뜨면 요통 위험. 무릎을 굽혀 난이도 조절.",
+    "how": "누워서 허리를 바닥에 붙인 채 다리를 천천히 들어 올렸다 내린다.",
+    "alternatives": [
+      "plank"
+    ],
+    "weightBasis": "none",
+    "weightMultiplier": null
+  },
+  {
+    "id": "treadmill-walk",
+    "name": "트레드밀 걷기/조깅",
+    "muscles": [
+      "유산소"
+    ],
+    "level": "beginner",
+    "equipment": "machine",
+    "risk": "처음부터 속도와 경사를 높이면 무릎과 발목 부담. 점진적으로 올린다.",
+    "how": "5분 워밍업 후 대화가 가능한 강도로 20~40분 유지하고 5분 쿨다운.",
+    "alternatives": [],
+    "weightBasis": "none",
+    "weightMultiplier": null
+  }
+]

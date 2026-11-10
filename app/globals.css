@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* design.md §2 Design Tokens */
+@theme {
+  --color-primary: #2f6bff;
+  --color-primary-tint: #eaf0ff;
+  --color-primary-dark: #0a3cb4;
+  --color-ink: #222222;
+  --color-muted: #6b7280;
+  --color-faint: #9aa1aa;
+  --color-line: #d7dbe2;
+  --color-divider: #e3e6ea;
+  --color-surface: #f6f7f9;
+  --color-bg: #ffffff;
+  --color-danger: #e5484d;
+  --color-sat: #2f6bff;
+  --color-sun: #e5484d;
+
+  --font-sans: "Malgun Gothic", "맑은 고딕", system-ui, sans-serif;
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+}
+
+input[type="range"] {
+  accent-color: var(--color-primary);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--color-primary);
+  width: 18px;
+  height: 18px;
+}
+
+@keyframes progress-slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(350%); }
+}
